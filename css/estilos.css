@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,100;0,200;1,100;1,200 & display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Montserrat', sans-serif; 
+    background-color: black;   
+}
+header{
+    height: 10vh;
+    background-color: rgba(198, 218, 82, 0.6);
+    float: left;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+header > div{
+    background-color: rgb(43, 226, 83, 0,);
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 15%;
+    height: 50px;
+    float: left;
+}
+header>div>img{
+    width: 50px;
+}
+header > nav{
+    background-color: rgb(173, 173, 30,0);
+    margin-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    height: 50px;
+    float: right;
+}
+header>nav>ul>li{
+    float: left;
+    list-style: none;
+    width: 25%;
+    text-align: center;
+    padding: top 10px; ;
+}
+header>nav>ul>li>a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    transition-duration: 200ms;
+
+}
+header>nav>ul>li>a:hover{
+    color: rgb(37, 80, 0);
+    transition-duration: 200ms;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+section{
+    float: left;
+    width: 100%;
+}
+section#section1{
+    background-image: url(../img/wallpaperbetter\ \(1\).jpg);
+    animation: fadeIn 4s ease;
+    background-size: 100%;
+    height: 100vh;
+    text-align: center;
+    
+}
+@keyframes fadeIn{
+    0%{opacity: 0%;
+    filter: blur(20px);}
+    10%{
+        opacity: 1;
+        filter: brightness(2) blur( 10px);
+    }
+}
+section#section1 > div{
+    background-color: rgb(0, 0, 0, 0.2);
+    float: left;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 20vh;
+    width: 50%;
+    height: 60vh;
+    text-align: center; 
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+}
+section#section1 > div > h1{
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px rgba(206,89,55,0);
+    color: rgb(37, 80, 0);
+}
+section#section1 > div > h4{
+    font-weight: lighter;
+    font-size: 1rem;
+}
+section#section2{
+    background-color: rgb(0, 0, 0);
+    height: 135vh;
+
+}
+section#section2 > div{
+    background-color: rgb(198, 218, 82);
+    float: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    width: 80%;
+    height: 60vh;
+}
+
+.card{
+    float: left;
+    margin-top: 5vh;
+    margin-left: 2%;
+    width: 22.5%;
+    height: 50vh;
+    background-color: rgb(37, 80, 0);
+    border-radius: 10px;
+    color: white;
+}
+.card .btncart{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(22, 0, 174);
+    color: white;
+    float: right;
+    margin: 5px;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 2;
+    transition-duration: 200ms;
+    z-index: 5;
+    position: absolute;
+
+}
+.card .btncart:hover{
+    color: black;
+    transition-duration: 200ms;
+    cursor: pointer;;
+}
+
+.card#Olmo {
+    background-image: url(../img/olmo.jpg);
+    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    overflow: hidden; 
+  }
+  .card#Olmo:after {
+    content: "Olmo";
+    color: black;
+    background-color: rgba(63, 194, 23, 0.75);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .4s;    
+  }
+  .card#Olmo:hover::after {
+    transform: translateY(0);
+  }
+.card#Anacahuita{
+    background-image: url(../img/Anacahuita.jpg);
+    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    overflow: hidden; 
+  }
+  .card#Anacahuita::after {
+    content: "Anacahuita";
+    color: black;
+    background-color: rgba(63, 194, 23, 0.75);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .4s;    
+  }
+  .card#Anacahuita:hover::after {
+    transform: translateY(0);
+  }
+
+.card#Ebano{
+    background-image: url(../img/ebano2.jpeg);
+    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    overflow: hidden; 
+  }
+  .card#Ebano:after {
+    content: "Ebano";
+    color: black;
+    background-color: rgba(63, 194, 23, 0.75);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .4s;    
+  }
+  .card#Ebano:hover::after {
+    transform: translateY(0);
+  }
+.card#Retama{
+    background-image: url(../img/retama.jpeg);
+    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    overflow: hidden; 
+  }
+  .card#Retama:after {
+    content: "Retama";
+    color: black;
+    background-color: rgba(63, 194, 23, 0.75);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .4s;    
+  }
+  .card#Retama:hover::after {
+    transform: translateY(0);
+  }
+.card#Durazno{
+    background-image: url(../img/durazno.jpg);
+    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    overflow: hidden; 
+  }
+  .card#Durazno:after {
+    content: "Durazno";
+    color: black;
+    background-color: rgba(63, 194, 23, 0.75);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .4s;    
+  }
+  .card#Durazno:hover::after {
+    transform: translateY(0);
+  }
+
+
+.card#Mandarino{
+    background-image: url(../img/mandarino.jpeg);
+    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    overflow: hidden; 
+  }
+  .card#Mandarino:after {
+    content: "Mandarino";
+    color: black;
+    background-color: rgba(63, 194, 23, 0.75);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .4s;    
+  }
+  .card#Mandarino:hover::after {
+    transform: translateY(0);
+  }
+
+.card#CirueloRojo{
+    background-image: url(../img/ciruelorojo.jpg);
+    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    overflow: hidden; 
+  }
+  .card#CirueloRojo:after {
+    content: "ciruelo Rojo";
+    color: black;
+    background-color: rgba(63, 194, 23, 0.75);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .4s;    
+  }
+  .card#CirueloRojo:hover::after {
+    transform: translateY(0);
+  }
+
+.card#Peral{
+    background-image: url(../img/peral.jpg);
+    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    overflow: hidden; 
+  }
+  .card#Peral:after {
+    content: "Peral";
+    color: black;
+    background-color: rgba(63, 194, 23, 0.75);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .4s;    
+  }
+  .card#Peral:hover::after {
+    transform: translateY(0);
+  }

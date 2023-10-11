@@ -1,0 +1,10 @@
+@media only screen and (min-width:300px) and (max-width: 576px){
+    section#section1{
+        background-image: url(../img/fondo\ cel.jpeg);
+        animation: fadeIn 4s ease;
+        background-size: 100% 100%;
+    }
+    section#section1 > div > h1{
+        color: rgb(209, 255, 168);
+    }
+}
